@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal information</legend>
+            <label>
+            Surname:
+            <input type="text" name="surname" required><br>
+            </label>
+            <label>
+            Name:
+            <input type="text" name="lastname" required><br>
+            </label>
+            <label>
+            How old are you?
+            <input type="number" name="age" size="3" value="12" min="1" max="100" required><br>
+            </label>
+            <label>
+            Full date of birth:
+            <input type="date" name="date" required><br>
+            </label>
+            <label>
+            I accept the term of the agreement <input type="checkbox" required>
+            </label>
+        </fieldset>
+        <!-- Personal information -->
+        <fieldset>
+            <legend>Registration</legend>
+            <label>
+            E-mail:
+            <input type="email" name="email" data-qa="field-placeholder" placeholder="example@gmail.com" required><br>
+            </label>
+            <label>
+            Password:
+            <input type="password" name="password" required>
+            </label>
+        </fieldset>
+        <!-- Registration -->
+        <fieldset>
+            <legend>An interestin facs about you</legend>
+            <label>
+            Do you love cats?
+            <input type="radio" name="question-one" value="Yes">Yes
+            <input type="radio" name="question-one" value="No">No<br>
+            </label>
+            <label>
+            What is youre favorite color?
+            <input type="color" name="color"><br>
+            </label>
+            <label>
+            What time do you go to bed?
+            <input type="time" name="time"><br>
+            </label>
+            <label>
+            What are youre favorite brand of cars?
+            <select multiple name="brand">
+            <option>BMW</option>
+            <option>Audi</option>
+            <option>Lada</option>
+            <option></option>
+            </select><br>
+            </label>
+            <label>
+            How do you rate out work?
+            <input type="range" name="range">
+            </label>
+        </fieldset>
+        <!-- An interestin facs about you -->
+        <fieldset>
+            <legend>Additional info</legend>
+            <label>
+            Comments:
+            <textarea name="comment" rows="2" cols="20"></textarea><br>
+            </label>
+            <label>
+            Would you recommend us?
+            <select name="answer">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            </select>
+            </label>
+        </fieldset>
+        <input class="btn" type="submit" value="submit">
+    </form>
+</body>
+
+</html>

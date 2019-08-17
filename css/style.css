@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+
+
+/*legend*/
+
+fieldset {
+    margin: 20px 40px;
+}
+
+
+/*input*/
+
+input {
+    margin-bottom: 10px;
+}
+
+.btn {
+    margin-left: 40px;
+}
